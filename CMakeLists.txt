@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 3.1...3.28)
 #[[启用编译 链接 相关 设置, 建议 设置在 project命令之前]]
 set(CMAKE_CXX_STANDARD 20)    # 不建议 "${CMAKE_CXX_FLAGS} -std=c++2a"
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 if (NOT CMAKE_BUILD_TYPE)
     message(STATUS "No build type selected, default to RelWithDebInfo")
     set(CMAKE_BUILD_TYPE "RelWithDebInfo")
@@ -36,15 +37,43 @@ project(
   endif()
 
 
+# testing settings
+#include(cmake/Testing.cmake)
+
+# adjust or override some CMake defaults
+include(cmake/OverrideCMakeDefaults.cmake)
+
+# default compiler options and warnings
+include(cmake/DefaultCompilerOptions.cmake)
+include(cmake/DefaultCompilerWarnings.cmake)
+
+# static analyzers
+include(cmake/StaticAnalyzers.cmake)
+
+# sanitizers
+include(cmake/Sanitizers.cmake)
+
+
 
 #[[打印输出相关变量]]
 include(CMakePrintHelpers)     # 内置的模组 CMakePrintHelpoers
 cmake_print_variables(CMAKE_CXX_FLAGS)
-
+#find_package(fmt CONFIG REQUIRED)
+#add_subdirectory(src/example)
+#add_subdirectory(src/show_info)
 
 
 # 定义工程会生成一个可执行程序 如有多个可用空格或;间隔
 add_executable(ModernCMakeCXX20 ./src/main.cxx )
+
+
+
+
+
+
+
+
+
 
 
 
