@@ -9,3 +9,57 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+
+# * 是忽略文件  !*是不忽略
+
+#  编译的中间文件 #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# 压缩包 #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# 日志 和  数据库文件#
+######################
+*.log
+*.sql
+*.sqlite
+
+# 操作系统生成的文件 #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#不忽略特定文件 
+
+!*.md 
+!*.cxx
+!*.hxx 
+!*.txt 
+!*.yml
+
+# 忽略任何目录下 build 文件夹
+build/
+
+# 忽略 clangd编译中间文件 
+*.idx
