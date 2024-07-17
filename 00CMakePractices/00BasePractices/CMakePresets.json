@@ -1,0 +1,266 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "gcc-11",
+            "description": "GCC 11 compiler",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": {
+                    "type": "STRING",
+                    "value": "/usr/bin/gcc-11"
+                },
+                "CMAKE_CXX_COMPILER": {
+                    "type": "STRING",
+                    "value": "/usr/bin/g++-11"
+                }
+            }
+        },
+        {
+            "name": "clang-13",
+            "description": "Clang 13 compiler",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": {
+                    "type": "STRING",
+                    "value": "/usr/bin/clang-13"
+                },
+                "CMAKE_CXX_COMPILER": {
+                    "type": "STRING",
+                    "value": "/usr/bin/clang++-13"
+                }
+            }
+        },
+        {
+            "name": "afl-gcc",
+            "description": "AFL GCC compiler",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_C_COMPILER": {
+                    "type": "STRING",
+                    "value": "/usr/bin/afl-gcc"
+                },
+                "CMAKE_CXX_COMPILER": {
+                    "type": "STRING",
+                    "value": "/usr/bin/afl-g++"
+                }
+            }
+        },
+        {
+            "name": "cppcheck",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_CXX_CPPCHECK": "cppcheck;--enable=warning;--inconclusive;--force;--inline-suppr"
+            }
+        },
+        {
+            "name": "ccache-env",
+            "hidden": true,
+            "environment": {
+                "CCACHE_BASEDIR": "${sourceDir}",
+                "CCACHE_SLOPPINESS": "pch_defines,time_macros"
+            }
+        },
+        {
+            "name": "clang-tidy",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_CXX_CLANG_TIDY": "clang-tidy;--header-filter=${sourceDir}/*;-checks=-*,modernize-use-nullptr;-extra-arg=-std=c++17"
+            }
+        },
+        {
+            "name": "cpplint",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_CXX_CPPLINT": "cpplint"
+            }
+        },
+        {
+            "name": "iwyu",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_CXX_INCLUDE_WHAT_YOU_USE": "iwyu;-Xiwyu;any;-Xiwyu;iwyu;-Xiwyu"
+            }
+        },
+        {
+            "name": "lwyu",
+            "hidden": true,
+            "cacheVariables": {
+                "CMAKE_LINK_WHAT_YOU_USE": true
+            }
+        },
+        {
+            "name": "ci-ninja",
+            "displayName": "Ninja",
+            "description": "build using Ninja generator",
+            "inherits": "ccache-env",
+            "generator": "Ninja",
+            "hidden": true,
+            "binaryDir": "${sourceDir}/build"
+        },
+        {
+            "name": "ci-ninja-debug",
+            "inherits": [
+                "ci-ninja"
+            ],
+            "displayName": "Ninja Debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "ci-ninja-debug-tidy",
+            "inherits": [
+                "ci-ninja",
+                "clang-tidy"
+            ],
+            "displayName": "Ninja Debug (clang-tidy)",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        },
+        {
+            "name": "ci-ninja-release",
+            "inherits": "ci-ninja",
+            "displayName": "Ninja Release",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "ci-ninja-coverage",
+            "inherits": "ci-ninja-debug",
+            "displayName": "Ninja Coverage",
+            "cacheVariables": {
+                "CMAKE_CXX_FLAGS": "--coverage"
+            }
+        },
+        {
+            "name": "ci-ninja-multi",
+            "inherits": "ci-ninja",
+            "displayName": "Ninja Multi-Config",
+            "description": "build using Ninja Multi-Config generator",
+            "generator": "Ninja Multi-Config"
+        },
+        {
+            "name": "ci-ninja-sanitizers",
+            "inherits": "ci-ninja-debug",
+            "displayName": "Address Sanitizers Debug",
+            "cacheVariables": {
+                "CMAKE_CXX_FLAGS": "-fsanitize=address -fno-omit-frame-pointer",
+                "ENABLE_ADDRESS_SANITIZER_TEST": true
+            }
+        },
+        {
+            "name": "ci-msvc-19",
+            "displayName": "msvc 19",
+            "description": "Configuring for msvc 19",
+            "generator": "Visual Studio 16 2019",
+            "binaryDir": "build",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "ci-msvc-19-sanitizer",
+            "displayName": "msvc 19",
+            "description": "Configuring for code sanitizing with msvc 19 ",
+            "generator": "Visual Studio 16 2019",
+            "binaryDir": "build-sanitizer",
+            "architecture": "x64",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            },
+            "cacheVariables": {
+                "CMAKE_CXX_FLAGS": "/fsanitize=address /EHsc /Oy-",
+                "ENABLE_ADDRESS_SANITIZER_TEST": false
+            }
+        },
+        {
+            "name": "ci-ninja-windows-debug",
+            "displayName": "Ninja (Debug) with clang for windows",
+            "inherits": [
+                "ci-ninja-debug"
+            ],
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/.github/toolchain/clang-on-windows-toolchain.cmake"
+            },
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "ninja-debug-clang-13",
+            "inherits": [
+                "ci-ninja-debug",
+                "clang-13"
+            ],
+            "displayName": "Ninja (Debug, Clang 13)"
+        },
+        {
+            "name": "ninja-debug-afl-gcc",
+            "inherits": [
+                "ci-ninja-debug",
+                "afl-gcc"
+            ],
+            "displayName": "Ninja (Debug, AFL-GCC)"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "ci-msvc-debug",
+            "configurePreset": "ci-msvc-19",
+            "configuration": "Debug",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "ci-msvc-release",
+            "configurePreset": "ci-msvc-19",
+            "configuration": "Release",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        },
+        {
+            "name": "ci-msvc-debug-sanitizer",
+            "configurePreset": "ci-msvc-19-sanitizer",
+            "configuration": "Debug",
+            "condition": {
+                "type": "equals",
+                "lhs": "${hostSystemName}",
+                "rhs": "Windows"
+            }
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "ci-unit-tests-debug",
+            "configurePreset": "ci-msvc-19",
+            "configuration": "Debug",
+            "output": {
+                "outputOnFailure": true
+            },
+            "execution": {
+                "noTestsAction": "error",
+                "stopOnFailure": true
+            }
+        }
+    ]
+}
