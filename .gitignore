@@ -50,13 +50,21 @@ _deps
 ehthumbs.db
 Thumbs.db
 
+#忽略图像 
+*.png
+
 #不忽略特定文件 
 
 !*.md 
 !*.cxx
 !*.hxx 
+!*.c
+!*.h 
+!*.cpp
+!*.hpp
 !*.txt 
 !*.yml
+!*.cppm
 
 # 忽略任何目录下 build 文件夹
 build/
