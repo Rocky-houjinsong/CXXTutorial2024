@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.21...3.30)
 
 #                 [[启用编译 链接 相关 设置, 建议 设置在 project命令之前]]
 # c++标准，如98 11 14 17 20
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 # 只启用ISO C++标准的编译器标志，而不使用特定编译器的扩展
 set(CMAKE_CXX_EXTENSIONS OFF)
 # ON时，如果指定的C++标准不可用，CMake将停止配置并出现错误，OFF时，如果标准不可用，可以降级处理
