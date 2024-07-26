@@ -2,8 +2,17 @@ cmake_minimum_required(VERSION 3.1...3.28)
 
 #                               [[编译链接 选项设置 ]]
 # 启用C++语言标准 17标准 (固定受限的枚举类型 通过 _cplusplus 宏定义查看)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)   
-set(CMAKE_CXX_STANDARD 17)             
+set(CMAKE_CXX_STANDARD 17)
+# 只启用ISO C++标准的编译器标志，而不使用特定编译器的扩展
+set(CMAKE_CXX_EXTENSIONS OFF)
+# ON时，如果指定的C++标准不可用，CMake将停止配置并出现错误，OFF时，如果标准不可用，可以降级处理
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# 指定编译类型 Debug Release RelWithDebInfo MinSizeRel
+if (NOT CMAKE_BUILD_TYPE)
+    message(STATUS "No build type selected, default to RelWithDebInfo")
+    set(CMAKE_BUILD_TYPE "RelWithDebInfo")
+endif()       
+
 set(STR_TEST "Hello This is variable from CMakeLists.txt")
 
 project(
@@ -19,11 +28,6 @@ project(
 #                                 [[构建链接 打印输出]]
 #  方法一  直接打印 
 message(STATUS "Hello World from cmake!")
-# CMake 访问 变量   使用 ${}  
-message(STATUS ${PROJECT_BINARY_DIR})   
-message(STATUS ${CMakeTutorialStep1_VERSION_MAJOR})     # 手动打印 特定项目的版本信息 
-message(STATUS ${CMakeTutorialStep1_VERSION_MINOR})   
-
 
 
 # 方法二 CMakePrintHelpers 打印 
@@ -43,6 +47,7 @@ cmake_print_variables(CMAKE_VERSION)
     配置文件  借助转化成的 头文件 引入 可被 源文件读取, 反过来可以吗???    
 ]]
 configure_file(TutorialConfig.h.in CMakeTutorialConfig.h)
+
 
 
 

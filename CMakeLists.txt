@@ -29,12 +29,12 @@ project(
   HOMEPAGE_URL "https://github.com/Rocky-houjinsong/CMakeTutorialCXX20"
   LANGUAGES CXX)
 
-  find_program(CCACHE_PROGRAM ccache)
-  if (CCACHE_PROGRAM)
-	  message(STATUS "Found CCache: ${CCACHE_PROGRAM}")
-	  set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE ${CCACHE_PROGRAM})
-	  set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK ${CCACHE_PROGRAM})
-  endif()
+find_program(CCACHE_PROGRAM ccache)
+if (CCACHE_PROGRAM)
+  message(STATUS "Found CCache: ${CCACHE_PROGRAM}")
+  set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE ${CCACHE_PROGRAM})
+  set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK ${CCACHE_PROGRAM})
+endif()
 
 
 # testing settings
