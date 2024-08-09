@@ -14,7 +14,8 @@ int main(int argc, char* argv[])
     std::cout << "__cplusplus: " << __cplusplus << std::endl;
     std::cout << "CMakeTutorial_VERSION_MAJOR: " << CMakeTutorialStep1_VERSION_MAJOR << std::endl;
     std::cout << "CMakeTutorial_VERSION_MINOR: " << CMakeTutorialStep1_VERSION_MINOR << std::endl;
-    std::cout << "STR_TEST: " << STR_TEST << std::endl;
+    std::cout << "STR_TES: " << STR_TEST << std::endl;
+    std::cout << "测试是否支持中文" << std::endl;
     return 1;
   }
 

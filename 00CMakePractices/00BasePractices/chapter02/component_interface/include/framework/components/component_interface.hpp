@@ -18,7 +18,7 @@ public:
   /**
    * @brief Destroy the component1 object
    */
-  virtual ~component_interface() = default;
+  virtual ~component_interface() = default;   //析构函数
 
   /**
    * @brief Do some work

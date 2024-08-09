@@ -1,6 +1,4 @@
 # Top-level CMakeLists file for the Chapter 3 example content.
-#
-# SPDX-License-Identifier: MIT
 
 cmake_minimum_required(VERSION 3.21)
 

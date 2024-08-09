@@ -1,8 +1,6 @@
 # Chapter 3 - Example illustrating how to create a header only library
-#
-# SPDX-License-Identifier: MIT
 
-cmake_minimum_required(VERSION 3.21)
+cmake_minimum_required(VERSION 3.21...3.30)
 
 project(
     ch3_hello_header_only
@@ -12,6 +10,7 @@ project(
 )
 
 # Create a library target
+#                           [接口库]
 add_library(ch3_hello_header_only INTERFACE)
 
 # expose the include directories

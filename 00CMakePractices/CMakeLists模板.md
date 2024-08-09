@@ -5,8 +5,15 @@
 3. 验证: 构建`CMake ..` 是否成功
 4. 验证: C++启用的版本 
 5. 验证: 控制台乱码解决
+6. Clang  AppleClang 切换
 
 
+
+```cmake
+
+set(CMAKE_CXX_COMPILER /usr/local/opt/llvm/bin/clang++)   #Clang
+set(CMAKE_CXX_COMPILER /usr/bin/clang++)   # AppleClang
+```
 
 
 

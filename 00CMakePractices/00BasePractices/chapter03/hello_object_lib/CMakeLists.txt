@@ -1,9 +1,7 @@
 # Chapter3-  Example illustrating how to create an object library
-#
-# SPDX-License-Identifier: MIT
-
 cmake_minimum_required(VERSION 3.17)
 
+set(CMAKE_CXX_COMPILER /user/local/llvm/bin/clang++)
 project(
     ch3_hello_object
     VERSION 1.0.0

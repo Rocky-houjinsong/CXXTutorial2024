@@ -7,6 +7,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_EXTENSIONS OFF)
 # ON时，如果指定的C++标准不可用，CMake将停止配置并出现错误，OFF时，如果标准不可用，可以降级处理
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_CXX_COMPILER /usr/local/opt/llvm/bin/clang++)   #Clang
+#set(CMAKE_CXX_COMPILER /usr/bin/clang++)   # AppleClang
+
+
 # 指定编译类型 Debug Release RelWithDebInfo MinSizeRel
 if (NOT CMAKE_BUILD_TYPE)
     message(STATUS "No build type selected, default to RelWithDebInfo")
@@ -22,9 +27,6 @@ project(
   HOMEPAGE_URL "https://github.com/Rocky-houjinsong/CMakeTutorialCXX20"
   LANGUAGES CXX)
 
-
-
-
 #                                 [[构建链接 打印输出]]
 #  方法一  直接打印 
 message(STATUS "Hello World from cmake!")
@@ -37,6 +39,9 @@ cmake_print_variables(PROJECT_BINARY_DIR)     # build 所在目录  代表的 �
 cmake_print_variables(PROJECT_VERSION_MAJOR)     # 走 CMAKe 内置变量打印 版本信息 
 cmake_print_variables(PROJECT_VERSION_MINOR) 
 cmake_print_variables(CMAKE_VERSION) 
+
+message(STATUS  "CXX Compiler is ${CMAKE_CXX_COMPILER_ID} ")
+
 
 #[[ 配置文件  ---  将 输入文件 读取并  转化为 输出 文件  ,一般 是 .in 转化为 .h 文件 ,便于 配置 , 源文件方便 引入  
 

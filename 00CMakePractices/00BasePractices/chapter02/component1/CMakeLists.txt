@@ -1,6 +1,4 @@
 # CMakeLists file for the Chapter 2 - Component 1
-#
-# SPDX-License-Identifier: MIT
 
 project(
     ch2_framework_component1
@@ -8,7 +6,7 @@ project(
     DESCRIPTION "Chapter 2 component 1 implementation"
     LANGUAGES CXX
 )
-
+#                           [类库]
 add_library(
     ch2_framework_component1 STATIC
 ) # Create a static library target named ch2_framework_component1 (retrieved
@@ -26,6 +24,7 @@ target_link_libraries(
 
 target_compile_features(ch2_framework_component1 PUBLIC cxx_std_11)
 
+#                       [组件]
 # Make specified target(s) installable. Separate them to components.
 install(
     TARGETS ch2_framework_component1
