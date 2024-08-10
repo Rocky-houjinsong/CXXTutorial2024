@@ -71,3 +71,5 @@ build/
 
 # 忽略 clangd编译中间文件 
 *.idx
+# 忽略 VS 文件夹
+*.vs/
