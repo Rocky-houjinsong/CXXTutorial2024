@@ -1,9 +1,8 @@
-cmake_minimum_required(VERSION 3.1...3.28)
+cmake_minimum_required(VERSION 3.1...3.30)
 
 #                               [[编译链接 选项设置 ]]
 # 启用C++语言标准 17标准 (固定受限的枚举类型 通过 _cplusplus 宏定义查看)
 set(CMAKE_CXX_STANDARD 17)
-# 只启用ISO C++标准的编译器标志，而不使用特定编译器的扩展
 set(CMAKE_CXX_EXTENSIONS OFF)
 # ON时，如果指定的C++标准不可用，CMake将停止配置并出现错误，OFF时，如果标准不可用，可以降级处理
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

@@ -1,0 +1,9 @@
+{
+    "cmake.sourceDirectory": "/Users/rocky/CXXTutorial2024/00CMakePractices/00BasePractices/chapter11",
+    "files.associations": {
+        "__locale": "cpp",
+        "locale": "cpp",
+        "thread": "cpp",
+        "text_encoding": "cpp"
+    }
+}
