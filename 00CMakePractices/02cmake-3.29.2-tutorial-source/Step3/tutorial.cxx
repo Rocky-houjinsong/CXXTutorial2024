@@ -3,8 +3,8 @@
 #include <iostream>
 #include <string>
 
-#include "MathFunctions.h"
-#include "TutorialConfig.h"
+#include "MathFunctions.hxx"
+#include "TutorialConfig.hxx"
 
 int main(int argc, char* argv[])
 {
@@ -13,6 +13,7 @@ int main(int argc, char* argv[])
     std::cout << argv[0] << " Version " << Tutorial_VERSION_MAJOR << "."
               << Tutorial_VERSION_MINOR << std::endl;
     std::cout << "Usage: " << argv[0] << " number" << std::endl;
+     std::cout << "__cplusplus: " << __cplusplus << std::endl;             //  该 宏定义 : C++语言标准
     return 1;
   }
 

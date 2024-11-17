@@ -1,3 +1,33 @@
 // the configured options and settings for Tutorial
-#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
-#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+#define CMakeTutorialStep2_VERSION_MAJOR @CMakeTutorialStep2_VERSION_MAJOR@
+#define CMakeTutorialStep2_VERSION_MINOR @CMakeTutorialStep2_VERSION_MINOR@
+
+#cmakedefine USE_MYMATH 
+
+
+
+
+
+
+
+
+
+
+#cmakedefine CMakeTutorialStep2_VERSION_MAJOR_CMAKE @CMakeTutorialStep2_VERSION_MAJOR@
+#cmakedefine CMakeTutorialStep2_VERSION_MINOR_CMAKE @CMakeTutorialStep2_VERSION_MINOR@ 
+
+#define CMake_BOOLEAN @USE_MY_MATH@
+#cmakedefine CMAKE_BOOLEAN_CMAKE @USE_MY_MATH@
+
+#define CMAKE_VARIABLE
+#cmakedefine CMAKE_VARIABLE_CMAKE
+
+/** #define 和 #cmakedefine  二者区别 */
+
+// 1. 非0值,  二者相同 ;  对于 0 , cmakedefine 不会定义, define 正常定义
+// 2. 对于布尔值, false, camkedefine 不会定义;  true , 二者都会定义
+// 3. 对于 未定义的变量  cmakedefine不会定义 ,define会正常定义
+
+
+// 如何验证?  
+// 查看该配置文件生成的 头文件即可

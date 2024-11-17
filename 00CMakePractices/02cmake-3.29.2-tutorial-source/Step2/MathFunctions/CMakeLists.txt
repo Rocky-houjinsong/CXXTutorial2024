@@ -12,7 +12,9 @@ add_library(MathFunctions  mysqrt.cxx ; MathFunctions.h)
 set(Lib_SRC_MathFuc mysqrt.cxx ; MathFunctions.h)
 add_library(MathFunctions  ${Lib_SRC_MathFuc})
 ]]
-
+# 此处 头文件和 源文件在同一个目录下, 源文件可自动找到头文件,此处 头文件可不强制的写入到 里面;   
+# 假如: 若此处 源文件找不到 头文件, 需要通过  target_include_directories 进行指定
+add_library(MathFunctions  MathFunctions.cxx mysqrt.cxx MathFunctions.hxx mysqrt.hxx)
 
 # TODO 7: Create a variable USE_MYMATH using option and set default to ON
 
@@ -23,3 +25,5 @@ add_library(MathFunctions  ${Lib_SRC_MathFuc})
 # source mysqrt.cxx
 
 # TODO 13: When USE_MYMATH is ON, link SqrtLibrary to the MathFunctions Library
+
+message(STATUS MathFunctions CMakeLists.txt ---- "${PROJECT_SOURCE_DIR}")

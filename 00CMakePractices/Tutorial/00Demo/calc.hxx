@@ -7,6 +7,6 @@ int Add(int a, int b);
 
 int Product(int a, int b);
 
- int data1, data2; 
+extern int  data1, data2; 
 
 #endif //_CALC_H_

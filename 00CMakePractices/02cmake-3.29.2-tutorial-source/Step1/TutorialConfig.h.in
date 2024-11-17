@@ -1,6 +1,7 @@
 
-// 两种不同的 编写方式 
-// 格式  配置文件变量名    CMakeLists.txt中文件变量名 
+// knowledge:       两种不同的 编写方式 
+// info: 格式   配置变量名  CMake变量值   --> 头文件中变量名 和 值  
+// 验证: 定义 数字  ; 定义字符串 
 #define CMakeTutorialStep1_VERSION_MAJOR ${CMakeTutorialStep1_VERSION_MAJOR}
 #define CMakeTutorialStep1_VERSION_MINOR @CMakeTutorialStep1_VERSION_MINOR@
 

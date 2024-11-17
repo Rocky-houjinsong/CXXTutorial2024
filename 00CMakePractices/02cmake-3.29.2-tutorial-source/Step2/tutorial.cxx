@@ -3,26 +3,29 @@
 #include <iostream>
 #include <string>
 
-// TODO 5: Include MathFunctions.h
-#include "TutorialConfig.h"
+#include "TutorialConfig.hxx"
 
+
+#ifdef USE_MYMATH
+#include "MathFunctions.hxx"
+#endif
 int main(int argc, char* argv[])
 {
   if (argc < 2) {
-    // report version
-    std::cout << argv[0] << " Version " << Tutorial_VERSION_MAJOR << "."
-              << Tutorial_VERSION_MINOR << std::endl;
+    std::cout << argv[0] << " Version " << CMakeTutorialStep2_VERSION_MAJOR << "."
+              << CMakeTutorialStep2_VERSION_MINOR << std::endl;
     std::cout << "Usage: " << argv[0] << " number" << std::endl;
     return 1;
   }
 
-  // convert input to double
   const double inputValue = std::stod(argv[1]);
+ 
 
-  // TODO 6: Replace sqrt with mathfunctions::sqrt
-
-  // calculate square root
-  const double outputValue = sqrt(inputValue);
+  #ifdef USE_MYMATH
+        const double outputValue = mathfunctions::sqrt(inputValue);
+  #else
+        const double outputValue = sqrt(inputValue);
+  #endif
   std::cout << "The square root of " << inputValue << " is " << outputValue
             << std::endl;
   return 0;

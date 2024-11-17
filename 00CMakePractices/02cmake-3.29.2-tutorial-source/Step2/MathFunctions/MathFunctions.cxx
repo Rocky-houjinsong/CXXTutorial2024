@@ -1,9 +1,9 @@
-#include "MathFunctions.h"
+#include "MathFunctions.hxx"
 
 // TODO 11: include cmath
 
 // TODO 10: Wrap the mysqrt include in a precompiled ifdef based on USE_MYMATH
-#include "mysqrt.h"
+#include "mysqrt.hxx"
 
 namespace mathfunctions {
 double sqrt(double x)

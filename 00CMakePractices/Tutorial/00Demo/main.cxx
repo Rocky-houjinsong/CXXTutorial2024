@@ -7,8 +7,8 @@ using namespace std;
     data1 = 3;
     data2 = 4;
 
-    cout << Add(data1, data2) << endl;
-    cout << Product(data1, data2) << endl;
+    std::cout << Add(data1,data2) << std::endl;
+    std::cout << Product(data1, data2) << ≈ endl;
 
     return 0;
  }

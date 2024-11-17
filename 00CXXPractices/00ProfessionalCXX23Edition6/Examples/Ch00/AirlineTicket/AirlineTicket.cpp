@@ -1,18 +1,19 @@
 module airline_ticket;
+#include <iostream>
+#include <string>
 
-using namespace std;
 
-//AirlineTicket::AirlineTicket()
-//	: m_passengerName{ "Unknown Passenger" }
-//	, m_numberOfMiles{ 0 }
-//	, m_hasEliteSuperRewardsStatus{ false }
-//{
-//}
-//
-//AirlineTicket::~AirlineTicket()
-//{
-//	// Nothing to do in terms of cleanup
-//}
+AirlineTicket::AirlineTicket()
+	: m_passengerName{ "Unknown Passenger" }
+	, m_numberOfMiles{ 0 }
+	, m_hasEliteSuperRewardsStatus{ false }
+{
+}
+
+AirlineTicket::~AirlineTicket()
+{
+	// Nothing to do in terms of cleanup
+}
 
 double AirlineTicket::calculatePriceInDollars()
 {
@@ -26,12 +27,12 @@ double AirlineTicket::calculatePriceInDollars()
 	return getNumberOfMiles() * 0.1;
 }
 
-string AirlineTicket::getPassengerName()
+std::string AirlineTicket::getPassengerName()
 {
 	return m_passengerName;
 }
 
-void AirlineTicket::setPassengerName(string name)
+void AirlineTicket::setPassengerName(std::string name)
 {
 	m_passengerName = name;
 }
