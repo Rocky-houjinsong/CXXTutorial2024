@@ -1,0 +1,11 @@
+# ninja log v6
+2	110	1732436328633618398	CMakeFiles/StructTest.dir/employee.cppm.o.ddi	2b424433ba856ecd
+1	265	1732436328633324937	CMakeFiles/StructTest.dir/structtest.cxx.o.ddi	3ab8c002c645fb1e
+265	287	1732436328918269289	CMakeFiles/StructTest.dir/CXX.dd	f7e1d23c8f956b5f
+265	287	1732436328918269289	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/06_StructTest/build.ninja/CMakeFiles/StructTest.dir/CXXModules.json	f7e1d23c8f956b5f
+265	287	1732436328918269289	CMakeFiles/StructTest.dir/structtest.cxx.o.modmap	f7e1d23c8f956b5f
+265	287	1732436328918269289	CMakeFiles/StructTest.dir/employee.cppm.o.modmap	f7e1d23c8f956b5f
+288	646	1732436329273342787	CMakeFiles/StructTest.dir/employee.cppm.o	b4b4f2c0ee267aae
+288	646	1732436329273342787	CMakeFiles/StructTest.dir/employee.pcm	b4b4f2c0ee267aae
+647	3260	1732436329278465020	CMakeFiles/StructTest.dir/structtest.cxx.o	738ffe00a24dae0a
+3264	3442	1732436331895815420	StructTest	f27157e76a8e0455

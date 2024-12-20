@@ -1,0 +1,26 @@
+# ninja log v6
+356	381	1731855793858371015	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch00/AirlineTicket/build.ninja/CMakeFiles/Ticket.dir/CXXModules.json	5766edb7580dd2a1
+356	381	1731855793858371015	CMakeFiles/Ticket.dir/AirlineTicketTest.cpp.o.modmap	5766edb7580dd2a1
+356	381	1731855793858371015	CMakeFiles/Ticket.dir/CXX.dd	5766edb7580dd2a1
+979	1347	1731855794457537506	CMakeFiles/Ticket.dir/AirlineTicket.cpp.o	8e3dc68e9fe65ef3
+356	381	1731855793858371015	CMakeFiles/Ticket.dir/AirlineTicket.cppm.o.modmap	5766edb7580dd2a1
+381	979	1731855794447862188	CMakeFiles/Ticket.dir/AirlineTicket.cppm.o	ff2cbeeb23724f69
+979	1354	1731855794457268374	CMakeFiles/Ticket.dir/AirlineTicketTest.cpp.o	f52a0430b98d8b52
+12	355	1731855793489834678	CMakeFiles/Ticket.dir/AirlineTicket.cppm.o.ddi	71a67d934e1f0ce2
+11	355	1731855793489410713	CMakeFiles/Ticket.dir/AirlineTicket.cpp.o.ddi	1519098718909e17
+11	356	1731855793488969284	CMakeFiles/Ticket.dir/AirlineTicketTest.cpp.o.ddi	6c6aba29df6e92c
+356	381	1731855793858371015	CMakeFiles/Ticket.dir/AirlineTicket.cpp.o.modmap	5766edb7580dd2a1
+1354	1545	1731855794831945102	Ticket	87df06417c945361
+11	317	1731855949337836098	CMakeFiles/Ticket.dir/AirlineTicket.cpp.o.ddi	1519098718909e17
+11	317	1731855949337496950	CMakeFiles/Ticket.dir/AirlineTicketTest.cpp.o.ddi	6c6aba29df6e92c
+11	317	1731855949338078253	CMakeFiles/Ticket.dir/AirlineTicket.cppm.o.ddi	71a67d934e1f0ce2
+317	344	1731855949669841058	CMakeFiles/Ticket.dir/CXX.dd	5766edb7580dd2a1
+317	344	1731855949669841058	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch00/AirlineTicket/build.ninja/CMakeFiles/Ticket.dir/CXXModules.json	5766edb7580dd2a1
+317	344	1731855949669841058	CMakeFiles/Ticket.dir/AirlineTicketTest.cpp.o.modmap	5766edb7580dd2a1
+317	344	1731855949669841058	CMakeFiles/Ticket.dir/AirlineTicket.cpp.o.modmap	5766edb7580dd2a1
+317	344	1731855949669841058	CMakeFiles/Ticket.dir/AirlineTicket.cppm.o.modmap	5766edb7580dd2a1
+344	972	1731855950286273135	CMakeFiles/Ticket.dir/AirlineTicket.cppm.o	ff2cbeeb23724f69
+344	972	1731855950286273135	CMakeFiles/Ticket.dir/airline_ticket.pcm	ff2cbeeb23724f69
+972	1342	1731855950298890746	CMakeFiles/Ticket.dir/AirlineTicket.cpp.o	8e3dc68e9fe65ef3
+972	1349	1731855950298636886	CMakeFiles/Ticket.dir/AirlineTicketTest.cpp.o	f52a0430b98d8b52
+1349	1509	1731855950675943888	Ticket	87df06417c945361

@@ -1,0 +1,13 @@
+# ninja log v6
+7	267	1732423095305775009	CMakeFiles/NameSpace.dir/usingnamespaces.cxx.o.ddi	b58d12923a7d40ac
+291	573	1732423095589741413	CMakeFiles/NameSpace.dir/usingnamespaces.cxx.o	ccafe1eba5106d24
+267	291	1732423095588864671	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/02_Namespaces/build.ninja/CMakeFiles/NameSpace.dir/CXXModules.json	38def367b985f112
+267	291	1732423095588864671	CMakeFiles/NameSpace.dir/usingnamespaces.cxx.o.modmap	38def367b985f112
+267	291	1732423095588864671	CMakeFiles/NameSpace.dir/CXX.dd	38def367b985f112
+573	726	1732423095871554206	NameSpace	96e182810db89559
+6	259	1732423317503377405	CMakeFiles/NameSpace.dir/usingnamespaces.cxx.o.ddi	b58d12923a7d40ac
+259	284	1732423317780208114	CMakeFiles/NameSpace.dir/CXX.dd	38def367b985f112
+259	284	1732423317780208114	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/02_Namespaces/build.ninja/CMakeFiles/NameSpace.dir/CXXModules.json	38def367b985f112
+259	284	1732423317780208114	CMakeFiles/NameSpace.dir/usingnamespaces.cxx.o.modmap	38def367b985f112
+284	560	1732423317781063349	CMakeFiles/NameSpace.dir/usingnamespaces.cxx.o	ccafe1eba5106d24
+560	720	1732423318056886702	NameSpace	96e182810db89559

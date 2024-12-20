@@ -1,0 +1,12 @@
+/Users/rocky/.zprofile:1: no such file or directory: /opt/homebrew/bin/brew
+❯ ls -fl                                                                                                                                                                                                                                                  
+total 24
+drwxr-xr-x   5 rocky  staff   160 Jul 20 15:15 .
+drwxr-xr-x  34 rocky  staff  1088 Nov  4 23:45 ..
+-rw-r--r--   1 rocky  staff  1848 Nov 24 16:41 02_DesignatedInitializers.cpp
+-rw-r--r--   1 rocky  staff  1599 Jul 20 15:15 01_UniformInitialization.cpp
+-rw-r--r--   1 rocky  staff    64 Jul 20 15:15 README.txt
+❯ mv 02_DesignatedInitializers.cpp 02_DesignatedInitializers.cxx                                                                                                                                                                                          
+❯ clear                                                                                                                                                                                                                                                   
+~/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/21_UniformInitialization master* ❯                                                                                                                                    16:42:20 
+~/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/21_UniformInitialization master* ❯                                                                                                                                    16:42:20 

@@ -1,0 +1,7 @@
+# ninja log v6
+2	385	1732441150899208504	CMakeFiles/Const.dir/const.cxx.o.ddi	cbae2ceef9e110af
+386	442	1732441151338940366	CMakeFiles/Const.dir/CXX.dd	fa0ae88048f6f0f3
+386	442	1732441151338940366	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/23_const/build.ninja/CMakeFiles/Const.dir/CXXModules.json	fa0ae88048f6f0f3
+386	442	1732441151338940366	CMakeFiles/Const.dir/const.cxx.o.modmap	fa0ae88048f6f0f3
+485	1099	1732441151382354261	CMakeFiles/Const.dir/const.cxx.o	504a97096708865d
+1104	1303	1732441152001478941	Const	7d38e5f7dccc626d

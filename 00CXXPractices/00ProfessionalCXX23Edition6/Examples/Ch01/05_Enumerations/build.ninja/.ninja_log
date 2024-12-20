@@ -1,0 +1,11 @@
+# ninja log v6
+1	203	1732435515725674059	CMakeFiles/Enumerations.dir/StronglyTypedEnums.cxx.o.ddi	9c0998a755a8b64c
+203	226	1732435515949952409	CMakeFiles/Enumerations.dir/CXX.dd	c1dfdf0c2c44a928
+203	226	1732435515949952409	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/05_Enumerations/build.ninja/CMakeFiles/Enumerations.dir/CXXModules.json	c1dfdf0c2c44a928
+203	226	1732435515949952409	CMakeFiles/Enumerations.dir/StronglyTypedEnums.cxx.o.modmap	c1dfdf0c2c44a928
+1	209	1732435609063955368	CMakeFiles/Enumerations.dir/StronglyTypedEnums.cxx.o.ddi	9c0998a755a8b64c
+210	232	1732435609293800977	CMakeFiles/Enumerations.dir/CXX.dd	c1dfdf0c2c44a928
+210	232	1732435609293800977	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/05_Enumerations/build.ninja/CMakeFiles/Enumerations.dir/CXXModules.json	c1dfdf0c2c44a928
+210	232	1732435609293800977	CMakeFiles/Enumerations.dir/StronglyTypedEnums.cxx.o.modmap	c1dfdf0c2c44a928
+232	566	1732435609294691718	CMakeFiles/Enumerations.dir/StronglyTypedEnums.cxx.o	88edcc74b46ea72
+569	748	1732435609631126608	Enumerations	e45fec7eb4c49134

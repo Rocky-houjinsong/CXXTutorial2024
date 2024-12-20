@@ -1,0 +1,7 @@
+# ninja log v6
+1	255	1732440741972097499	CMakeFiles/Pointers.dir/03_NullPointerConstant.cxx.o.ddi	cc014006172b342d
+258	310	1732440742279452539	CMakeFiles/Pointers.dir/CXX.dd	765e97f83f227312
+258	310	1732440742279452539	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/22_Pointers/build.ninja/CMakeFiles/Pointers.dir/CXXModules.json	765e97f83f227312
+258	310	1732440742279452539	CMakeFiles/Pointers.dir/03_NullPointerConstant.cxx.o.modmap	765e97f83f227312
+333	477	1732440742304461478	CMakeFiles/Pointers.dir/03_NullPointerConstant.cxx.o	201f3bbb650a2b92
+477	630	1732440742447861282	Pointers	e3e873e3ed439418

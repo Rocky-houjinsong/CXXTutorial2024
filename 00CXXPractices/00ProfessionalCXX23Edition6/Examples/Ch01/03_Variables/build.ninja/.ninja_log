@@ -1,0 +1,12 @@
+# ninja log v6
+301	323	1732431956455113985	CMakeFiles/Variables.dir/CXX.dd	7027c163575f471a
+301	323	1732431956455113985	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/03_Variables/build.ninja/CMakeFiles/Variables.dir/CXXModules.json	7027c163575f471a
+1102	1259	1732431433382736449	Variables	1e1273a3f87b42a9
+2	301	1732431956134593524	CMakeFiles/Variables.dir/03_numeric_limits.cxx.o.ddi	251e855c49c6dd19
+301	323	1732431956455113985	CMakeFiles/Variables.dir/03_numeric_limits.cxx.o.modmap	7027c163575f471a
+1	255	1732432015354937298	CMakeFiles/Variables.dir/03_numeric_limits.cxx.o.ddi	251e855c49c6dd19
+256	278	1732432015630716762	CMakeFiles/Variables.dir/CXX.dd	7027c163575f471a
+256	278	1732432015630716762	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/03_Variables/build.ninja/CMakeFiles/Variables.dir/CXXModules.json	7027c163575f471a
+256	278	1732432015630716762	CMakeFiles/Variables.dir/03_numeric_limits.cxx.o.modmap	7027c163575f471a
+278	1061	1732432015631652818	CMakeFiles/Variables.dir/03_numeric_limits.cxx.o	8876d4160ca3727c
+1065	1222	1732432016418528105	Variables	d00eb8de5ccd3593

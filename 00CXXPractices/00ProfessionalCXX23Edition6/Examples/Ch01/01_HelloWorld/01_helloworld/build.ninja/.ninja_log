@@ -1,0 +1,13 @@
+# ninja log v6
+6	257	1732291466047263064	CMakeFiles/HelloWorld.dir/01_helloworld.cxx.o.ddi	21d937cb64027172
+257	280	1732291466320310510	CMakeFiles/HelloWorld.dir/CXX.dd	b2877841767faa34
+257	280	1732291466320310510	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/01_HelloWorld/01_helloworld/build.ninja/CMakeFiles/HelloWorld.dir/CXXModules.json	b2877841767faa34
+257	280	1732291466320310510	CMakeFiles/HelloWorld.dir/01_helloworld.cxx.o.modmap	b2877841767faa34
+280	639	1732291466321201327	CMakeFiles/HelloWorld.dir/01_helloworld.cxx.o	a026861b89ced8d0
+640	794	1732291466680430714	HelloWorld	f11f8489cdb9e26f
+7	290	1732294918985120549	CMakeFiles/HelloWorld.dir/01_helloworld.cxx.o.ddi	21d937cb64027172
+290	315	1732294919292098038	CMakeFiles/HelloWorld.dir/CXX.dd	b2877841767faa34
+290	315	1732294919292098038	/Users/rocky/CXXTutorial2024/00CXXPractices/00ProfessionalCXX23Edition6/Examples/Ch01/01_HelloWorld/01_helloworld/build.ninja/CMakeFiles/HelloWorld.dir/CXXModules.json	b2877841767faa34
+290	315	1732294919292098038	CMakeFiles/HelloWorld.dir/01_helloworld.cxx.o.modmap	b2877841767faa34
+315	2222	1732294919293141492	CMakeFiles/HelloWorld.dir/01_helloworld.cxx.o	a026861b89ced8d0
+2222	2383	1732294921200345925	HelloWorld	f11f8489cdb9e26f
