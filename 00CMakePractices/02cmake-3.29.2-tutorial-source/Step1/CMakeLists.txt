@@ -40,6 +40,9 @@ cmake_print_variables(PROJECT_VERSION_MAJOR)     # 走 CMAKe 内置变量打印 
 cmake_print_variables(PROJECT_VERSION_MINOR) 
 cmake_print_variables(CMAKE_VERSION) 
 
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror=return-type")
+endif()
 
 
 #[[ info: 配置文件--> 将 输入文件 读取并  转化为 输出 文件  ,一般 是 .in 转化为 .h 文件 ,便于 配置 , 源文件方便 引入  
